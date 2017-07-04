@@ -14,4 +14,4 @@ USER 1000
 WORKDIR /flyway
 # ENTRYPOINT ["flyway"]
 # CMD ["--help"]"
-CMD ["tail", "-f", "-"]
+CMD ["sh", "-c", "tail -f /dev/null"]
