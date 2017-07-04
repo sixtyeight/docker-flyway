@@ -12,5 +12,6 @@ VOLUME /flyway/jars
 USER 1000
 
 WORKDIR /flyway
-ENTRYPOINT ["flyway"]
-CMD ["--help"]"
+# ENTRYPOINT ["flyway"]
+# CMD ["--help"]"
+CMD ["tail", "-f", "-"]
