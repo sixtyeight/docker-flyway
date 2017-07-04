@@ -7,6 +7,8 @@ RUN tar -xzf /flyway.tar.gz && rm /flyway.tar.gz && mv /flyway-4.0.3 /flyway
 RUN ln -s /flyway/flyway /usr/local/bin/flyway
 RUN chmod ugo+x /flyway/flyway
 
+VOLUME /flyway/jars
+
 USER 1000
 
 WORKDIR /flyway
